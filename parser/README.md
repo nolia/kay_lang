@@ -5,3 +5,10 @@
 Key features:
 [] simple
 [] even more simple
+
+TODO List:
+[] Language spec
+[] Lexer
+[] Parser
+[] Interpreter
+[] LLVM-based compiler
