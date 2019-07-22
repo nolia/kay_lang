@@ -39,7 +39,15 @@ func TestTokenize(t *testing.T) {
 				Token{Type: NUMBER, Value: "987"},
 			},
 		},
-
+		{
+			name: "Assignment",
+			s:    "a = 945",
+			want: []Token{
+				Token{Type: IDENTIFIER, Value: "a"},
+				Token{Type: ASSIGN, Value: "="},
+				Token{Type: NUMBER, Value: "945"},
+			},
+		},
 		{
 			name: "Complex operation",
 			s:    "a + 2*3 + b/4",

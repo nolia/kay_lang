@@ -41,6 +41,10 @@ func Tokenize(s string) []Token {
 			res, buff = pushToken(res, buff)
 			res = append(res, Token{Type: CLOSE_PAR, Value: string(r)})
 
+		case r == '=':
+			res, buff = pushToken(res, buff)
+			res = append(res, Token{Type: ASSIGN, Value: string(r)})
+
 		default:
 			buff = append(buff, r)
 		}

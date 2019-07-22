@@ -8,6 +8,7 @@ const (
 	IDENTIFIER TokenType = "ident"
 	OPEN_PAR   TokenType = "open_paren"
 	CLOSE_PAR  TokenType = "open_paren"
+	ASSIGN     TokenType = "assign"
 	OTHER      TokenType = "other"
 )
 
